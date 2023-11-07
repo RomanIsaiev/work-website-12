@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" overflow="hidden" style="position:absolute;width:0;height:0">
+  <defs>
+    <symbol id="icon-section-three-arrow" viewBox="0 0 27 32">
+      <path fill="var(--color1, #8d0099)" d="m6.456 19.222 7.161 7.161 7.161-7.161-1.204-1.204-5.106 5.106V.891h-1.702v22.233L7.66 18.018l-1.204 1.204z"/>
+      <path fill="var(--color2, #c500d6)" d="m6.456 19.222 7.161 7.161 7.161-7.161-1.204-1.204-5.106 5.106V.891h-1.702v22.233L7.66 18.018l-1.204 1.204z"/>
+    </symbol>
+  </defs>
+</svg>

@@ -628,6 +628,23 @@ p {
   margin-right: auto;
 
   margin-bottom: 40px;
+
+  animation: glowing-two 1300ms infinite;
+}
+
+@keyframes glowing-two {
+  0% {
+    background-color: #c500d6;
+    box-shadow: 0 0 5px #c500d6;
+  }
+  50% {
+    background-color: #f150ff;
+    box-shadow: 0 0 20px #f150ff;
+  }
+  100% {
+    background-color: #c500d6;
+    box-shadow: 0 0 5px #c500d6;
+  }
 }
 
 .buy-text {

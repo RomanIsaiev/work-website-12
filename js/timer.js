@@ -25,16 +25,16 @@ document.addEventListener('DOMContentLoaded', function () {
     $hours.textContent = hours < 10 ? '0' + hours : hours;
     $minutes.textContent = minutes < 10 ? '0' + minutes : minutes;
     $seconds.textContent = seconds < 10 ? '0' + seconds : seconds;
-    $days.dataset.title = declensionNum(days, ['день', 'дні', 'днів']);
-    $hours.dataset.title = declensionNum(hours, ['година', 'години', 'годин']);
+    $days.dataset.title = declensionNum(days, ['день', 'дня', 'дней']);
+    $hours.dataset.title = declensionNum(hours, ['час', 'часа', 'часов']);
     $minutes.dataset.title = declensionNum(minutes, [
-      'хвилина',
-      'хвилини',
-      'хвилин',
+      'минута',
+      'минуты',
+      'минут',
     ]);
     $seconds.dataset.title = declensionNum(seconds, [
-      'секунда',
-      'секунди',
+      'секунд',
+      'секунды',
       'секунд',
     ]);
   }

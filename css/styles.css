@@ -482,14 +482,13 @@ p {
 .five-price-list {
   display: flex;
   flex-direction: column;
-  gap: 30px;
 
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.five-price-list .list-item {
+.five-price-list .list-item .wrapper {
   position: relative;
 
   display: flex;
@@ -499,9 +498,33 @@ p {
   background: rgba(255, 255, 255, 0.05);
 
   padding: 30px;
+
+  margin-bottom: 20px;
 }
 
-.five-price-list .list-item::before {
+.five-price-list .list-item::after {
+  content: '';
+  display: block;
+
+  width: 80px;
+  height: 1px;
+
+  margin: 30px auto 30px auto;
+
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(246, 136, 255, 1) 30%,
+    rgba(246, 136, 255, 1) 70%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+.five-price-list .list-item:last-child::after {
+  display: none;
+}
+
+.five-price-list .list-item .wrapper::before {
   content: '';
   position: absolute;
   top: 0;
@@ -523,6 +546,8 @@ p {
   font-style: normal;
   font-weight: 400;
   line-height: 130%; /* 18.2px */
+
+  max-width: 159px;
 }
 
 .five-price-list .list-item .item-price {
@@ -532,6 +557,28 @@ p {
   font-style: normal;
   font-weight: 400;
   line-height: 130%; /* 36.4px */
+}
+
+.list-item-button {
+  display: block;
+
+  color: #0d0d0d;
+  text-align: center;
+  font-family: Unbounded;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%; /* 18.2px */
+  text-transform: uppercase;
+
+  padding: 12px;
+  border-radius: 40px;
+  background: #f688ff;
+
+  max-width: 233px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .all-included-wrapper {
